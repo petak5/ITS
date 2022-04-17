@@ -1,3 +1,7 @@
+# Author: Peter Urgoš (xurgos00)
+# Date:   2022-04-17
+# Tests:  6-9
+
 Scenario: Add tool
   Given "Add Tool" page is shown
   And required fields are filled out

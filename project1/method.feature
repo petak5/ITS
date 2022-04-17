@@ -1,3 +1,7 @@
+# Author: Peter Urgoš (xurgos00)
+# Date:   2022-04-17
+# Tests:  1-5
+
 Scenario: Add method
   Given "Add Method" page is shown
   And required fields are filled out
@@ -23,8 +27,8 @@ Scenario: Delete method
   When producer clicks on "Delete" button
   Then the method is deleted
 
-Scenario: Add tool to method
+Scenario: Add tool to method relations
   Given "Edit Method" page is shown
-  When tool is added in "Relations" tab
-  And producer clicks on "Save" button
+  And tool is added in "Relations" tab
+  When producer clicks on "Save" button
   Then the tool is added to list of tools

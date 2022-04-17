@@ -1,9 +1,13 @@
+# Author: Peter Urgoš (xurgos00)
+# Date:   2022-04-17
+# Tests:  18-21
+
 Scenario: Test visibility of published method
   Given method state is set to "Published"
   When consumer searches for the method on "Methods" page
   Then the method is shown in the list
 
-Scenario: Test visibility of published method
+Scenario: Test visibility of private method
   Given method state is set to "Private"
   When consumer searches for the method on "Methods" page
   Then the method is not shown in the list
