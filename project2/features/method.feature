@@ -1,5 +1,5 @@
 # Author: Peter Urgoš (xurgos00)
-# Date:   2022-04-17
+# Date:   2022-04-29
 # Tests:  1-5
 
 Feature: Method
