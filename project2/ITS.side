@@ -1,0 +1,1377 @@
+{
+  "id": "a883da56-6459-4ade-9888-103344dcf646",
+  "version": "2.0",
+  "name": "ITS",
+  "url": "http://localhost:8080/repo/use-cases",
+  "tests": [{
+    "id": "06c54a81-8e64-40c6-811b-46285e6177ce",
+    "name": "Login as producer",
+    "commands": [{
+      "id": "dbce0c34-3293-4d61-88a1-e5024a3ba01b",
+      "comment": "",
+      "command": "open",
+      "target": "/repo/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9796b87-4e8d-4b58-9075-2775d7ec0fd9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a9cc320-d8fb-4fed-87a9-fcaf64f09b6a",
+      "comment": "",
+      "command": "click",
+      "target": "id=personaltools-login",
+      "targets": [
+        ["id=personaltools-login", "id"],
+        ["linkText=Log in", "linkText"],
+        ["css=#personaltools-login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[@id='personaltools-login']", "xpath:attributes"],
+        ["xpath=//div[@id='portal-anontools']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/repo/login']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f208a4cb-1981-4d96-9cff-a58f47826aae",
+      "comment": "",
+      "command": "click",
+      "target": "id=__ac_name",
+      "targets": [
+        ["id=__ac_name", "id"],
+        ["name=__ac_name", "name"],
+        ["css=#\\__ac_name", "css:finder"],
+        ["xpath=//input[@id='__ac_name']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18b51a33-a030-4c9f-9325-37d68c62ee6d",
+      "comment": "",
+      "command": "type",
+      "target": "id=__ac_name",
+      "targets": [
+        ["id=__ac_name", "id"],
+        ["name=__ac_name", "name"],
+        ["css=#\\__ac_name", "css:finder"],
+        ["xpath=//input[@id='__ac_name']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "itsadmin"
+    }, {
+      "id": "a63479de-c862-4e46-93fa-15595154290d",
+      "comment": "",
+      "command": "type",
+      "target": "id=__ac_password",
+      "targets": [
+        ["id=__ac_password", "id"],
+        ["name=__ac_password", "name"],
+        ["css=#\\__ac_password", "css:finder"],
+        ["xpath=//input[@id='__ac_password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "itsadmin"
+    }, {
+      "id": "b7ae8485-cbd9-4f37-8698-3822948c83d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pattern-modal-buttons > #buttons-login",
+      "targets": [
+        ["css=.pattern-modal-buttons > #buttons-login", "css:finder"],
+        ["xpath=(//input[@id='buttons-login'])[2]", "xpath:attributes"],
+        ["xpath=//body[@id='visual-portal-wrapper']/div[2]/div/div/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d88b2090-59e9-4fbd-bb85-7d7ad35effa9",
+    "name": "Logout",
+    "commands": [{
+      "id": "c95515ab-dc76-4f59-bb8d-9cd0dd2fd11f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84137571-b0ea-41b6-8bd6-f0ed3d440e01",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1201x902",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41b039c3-f6c5-4e68-af52-3036dbda258c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#portal-personaltools span:nth-child(2)",
+      "targets": [
+        ["css=#portal-personaltools span:nth-child(2)", "css:finder"],
+        ["xpath=//li[@id='portal-personaltools']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//ul[2]/li/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'itsadmin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2482b01-cb09-4134-a31c-ae409a2bb8b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=personaltools-logout",
+      "targets": [
+        ["id=personaltools-logout", "id"],
+        ["linkText=Log out", "linkText"],
+        ["css=#personaltools-logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//a[@id='personaltools-logout']", "xpath:attributes"],
+        ["xpath=//li[@id='portal-personaltools']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/repo/logout']", "xpath:href"],
+        ["xpath=//ul[2]/li/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2926035e-f885-4d3e-8e83-ec96be75f609",
+    "name": "Method add",
+    "commands": [{
+      "id": "ff794b92-a5f2-43ac-b3e2-57605ec207ed",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "883be848-0a2f-459f-99ab-0f215fed1b8e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1201x902",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "236cfb3e-15d4-4c9d-ba11-73f31ac7042f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Methods",
+      "targets": [
+        ["linkText=Methods", "linkText"],
+        ["css=.method > .state-published", "css:finder"],
+        ["xpath=//a[contains(text(),'Methods')]", "xpath:link"],
+        ["xpath=//ul[@id='portal-globalnav']/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/repo/method']", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Methods')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cda7c1b8-82d8-4192-9cab-c80386dc2394",
+      "comment": "",
+      "command": "click",
+      "target": "css=#plone-contentmenu-factories .plone-toolbar-title",
+      "targets": [
+        ["css=#plone-contentmenu-factories .plone-toolbar-title", "css:finder"],
+        ["xpath=//li[@id='plone-contentmenu-factories']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[5]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Add new…')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1ab38ac-db67-42a0-b9ab-c39dae1ec69e",
+      "comment": "",
+      "command": "click",
+      "target": "id=method",
+      "targets": [
+        ["id=method", "id"],
+        ["linkText=Method", "linkText"],
+        ["css=#method", "css:finder"],
+        ["xpath=//a[contains(text(),'Method')]", "xpath:link"],
+        ["xpath=//a[@id='method']", "xpath:attributes"],
+        ["xpath=//li[@id='plone-contentmenu-factories']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/repo/method/++add++method']", "xpath:href"],
+        ["xpath=//li[5]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Method')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7644de33-20ae-4744-8502-3477ff6dc621",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-widgets-IBasic-title",
+      "targets": [
+        ["id=form-widgets-IBasic-title", "id"],
+        ["name=form.widgets.IBasic.title", "name"],
+        ["css=#form-widgets-IBasic-title", "css:finder"],
+        ["xpath=//input[@id='form-widgets-IBasic-title']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-IBasic-title']/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23e82030-945e-43aa-942f-a1196c3b5f61",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-widgets-IBasic-title",
+      "targets": [
+        ["id=form-widgets-IBasic-title", "id"],
+        ["name=form.widgets.IBasic.title", "name"],
+        ["css=#form-widgets-IBasic-title", "css:finder"],
+        ["xpath=//input[@id='form-widgets-IBasic-title']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-IBasic-title']/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "387ef50d-3f4f-4972-baf7-853dc6d3346b",
+      "comment": "",
+      "command": "type",
+      "target": "id=form-widgets-IBasic-title",
+      "targets": [
+        ["id=form-widgets-IBasic-title", "id"],
+        ["name=form.widgets.IBasic.title", "name"],
+        ["css=#form-widgets-IBasic-title", "css:finder"],
+        ["xpath=//input[@id='form-widgets-IBasic-title']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-IBasic-title']/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": "Example method"
+    }, {
+      "id": "abaeebde-5a4b-4520-a140-0ad6344cfe63",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-widgets-method_purpose",
+      "targets": [
+        ["id=form-widgets-method_purpose", "id"],
+        ["name=form.widgets.method_purpose", "name"],
+        ["css=#form-widgets-method_purpose", "css:finder"],
+        ["xpath=//textarea[@id='form-widgets-method_purpose']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-method_purpose']/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08fbb2df-4387-4fc9-a2a9-821eaf6bd384",
+      "comment": "",
+      "command": "type",
+      "target": "id=form-widgets-method_purpose",
+      "targets": [
+        ["id=form-widgets-method_purpose", "id"],
+        ["name=form.widgets.method_purpose", "name"],
+        ["css=#form-widgets-method_purpose", "css:finder"],
+        ["xpath=//textarea[@id='form-widgets-method_purpose']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-method_purpose']/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/textarea", "xpath:position"]
+      ],
+      "value": "To be an example"
+    }, {
+      "id": "e4c17c07-2b2c-442a-a53b-b2551c90b7d0",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=3",
+      "targets": [
+        ["index=3"]
+      ],
+      "value": ""
+    }, {
+      "id": "060b4737-7d60-4050-a301-018dbe153702",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'\n')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e308121-4694-400c-b463-651fbd551da7",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad19c7c6-875c-4712-81dc-506aa7c588ee",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,969)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae133f73-9ae0-409b-a1aa-3530ccdf6db9",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=3",
+      "targets": [
+        ["index=3"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a85d4ce-ded4-4fb9-bcc4-6b4699e97d37",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "<p>An example method<br data-mce-bogus=\"1\"></p>"
+    }, {
+      "id": "10aaf0f0-e8b5-4c4a-a7a5-f516e8f49b33",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "9441a427-fe0c-4ace-8fbc-9a20af98d2f1",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "75993336-e9a3-4994-8676-66f1f27210a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'\n')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45adf0fa-2962-4dfe-8e43-47f509a9b5fd",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "<p>There are none<br data-mce-bogus=\"1\"></p>"
+    }, {
+      "id": "a241fdc5-f87a-4b2c-a97e-ac2c5852144d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff5bdfb3-2c0d-46d6-9229-6385fdb6bafc",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6cc091b-16fe-445b-8c9f-f91676bf03f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'\n')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dea083d6-95bb-4c20-8160-9a727c199480",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "<p>There are also none<br data-mce-bogus=\"1\"></p>"
+    }, {
+      "id": "1312d5bf-c775-4a97-a34b-58e8b8134bc0",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ee68baa-79ee-48ed-814c-5f288b74cfa7",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-buttons-save",
+      "targets": [
+        ["id=form-buttons-save", "id"],
+        ["name=form.buttons.save", "name"],
+        ["css=#form-buttons-save", "css:finder"],
+        ["xpath=//input[@id='form-buttons-save']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/input", "xpath:idRelative"],
+        ["xpath=//article/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56256a1d-f8cd-472f-a2c3-28167615459b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.portalMessage",
+      "targets": [],
+      "value": "Info Item created"
+    }, {
+      "id": "7d4ae735-ea6c-42e3-928c-0522337b6dba",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.documentFirstHeading",
+      "targets": [],
+      "value": "Example method"
+    }]
+  }, {
+    "id": "d0684a42-cc80-4a2c-b95c-4bd41bda0d79",
+    "name": "Method edit",
+    "commands": [{
+      "id": "7a3f9af8-b33f-4018-afe9-4545e127a411",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/method/example-method-9",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8a71db4-8554-49e4-99a1-bc3981f62e11",
+      "comment": "",
+      "command": "click",
+      "target": "css=#contentview-edit span:nth-child(2)",
+      "targets": [
+        ["css=#contentview-edit span:nth-child(2)", "css:finder"],
+        ["xpath=//li[@id='contentview-edit']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "167c3846-a01d-4712-b630-5adaa7a9bf6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-widgets-IBasic-title",
+      "targets": [
+        ["id=form-widgets-IBasic-title", "id"],
+        ["name=form.widgets.IBasic.title", "name"],
+        ["css=#form-widgets-IBasic-title", "css:finder"],
+        ["xpath=//input[@id='form-widgets-IBasic-title']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-IBasic-title']/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b1195c6-7711-4bf5-9ef0-d209caee27a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=form-widgets-IBasic-title",
+      "targets": [],
+      "value": "Changed method title"
+    }, {
+      "id": "2df2f27f-6b41-4f5b-9b75-7a08dec3b518",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-buttons-save",
+      "targets": [
+        ["id=form-buttons-save", "id"],
+        ["name=form.buttons.save", "name"],
+        ["css=#form-buttons-save", "css:finder"],
+        ["xpath=//input[@id='form-buttons-save']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/input", "xpath:idRelative"],
+        ["xpath=//article/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a99464b-2c65-4b2d-8d2d-c33a2e918b94",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.documentFirstHeading",
+      "targets": [],
+      "value": "Changed method title"
+    }]
+  }, {
+    "id": "7d9f3531-f2ed-405f-bfda-4ebbdfee755d",
+    "name": "Method delete",
+    "commands": [{
+      "id": "1995d826-2744-4b05-a5bf-b12810d7b951",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/method/example-method-9",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b0ba730-8e46-44dd-84bd-037b493ca792",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1201x993",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce506f86-67aa-4807-ac51-dd0670b1a788",
+      "comment": "",
+      "command": "click",
+      "target": "css=#plone-contentmenu-actions .plone-toolbar-title",
+      "targets": [
+        ["css=#plone-contentmenu-actions .plone-toolbar-title", "css:finder"],
+        ["xpath=//li[@id='plone-contentmenu-actions']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[5]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Actions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f81ade56-d369-4b25-a466-db44c814a06a",
+      "comment": "",
+      "command": "click",
+      "target": "id=plone-contentmenu-actions-delete",
+      "targets": [
+        ["id=plone-contentmenu-actions-delete", "id"],
+        ["linkText=Delete", "linkText"],
+        ["css=#plone-contentmenu-actions-delete", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete')]", "xpath:link"],
+        ["xpath=//a[@id='plone-contentmenu-actions-delete']", "xpath:attributes"],
+        ["xpath=//li[@id='plone-contentmenu-actions']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/repo/method/example-method-9/delete_confirmation?_authenticator=dcf0c52d38190c54e42be8c70b621ff9f8937071']", "xpath:href"],
+        ["xpath=//li[5]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b84da3c-bacb-4ac1-9583-2c6f3826f3b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pattern-modal-buttons > #form-buttons-Delete",
+      "targets": [
+        ["css=.pattern-modal-buttons > #form-buttons-Delete", "css:finder"],
+        ["xpath=(//input[@id='form-buttons-Delete'])[2]", "xpath:attributes"],
+        ["xpath=//body[@id='visual-portal-wrapper']/div[2]/div/div/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54981c77-2c89-4fcb-9b10-fb83c34de0e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.portalMessage",
+      "targets": [
+        ["css=.portalMessage", "css:finder"],
+        ["xpath=//aside[@id='global_statusmessage']/div", "xpath:idRelative"],
+        ["xpath=//aside/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dbe4a2f8-06b2-49ee-b1f6-37ffba8c8b14",
+    "name": "Tool add",
+    "commands": [{
+      "id": "054dcd1e-c920-4a97-a893-e37990b7e520",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/tools",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a706ce27-a410-423b-9f60-c9de245f2db4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#plone-contentmenu-factories .plone-toolbar-title",
+      "targets": [
+        ["css=#plone-contentmenu-factories .plone-toolbar-title", "css:finder"],
+        ["xpath=//li[@id='plone-contentmenu-factories']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Add new…')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ff97c2e-865b-4654-b826-8d0a6b853815",
+      "comment": "",
+      "command": "click",
+      "target": "id=tool",
+      "targets": [
+        ["id=tool", "id"],
+        ["linkText=Tool", "linkText"],
+        ["css=#tool", "css:finder"],
+        ["xpath=//a[contains(text(),'Tool')]", "xpath:link"],
+        ["xpath=//a[@id='tool']", "xpath:attributes"],
+        ["xpath=//li[@id='plone-contentmenu-factories']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/repo/tools/++add++tool']", "xpath:href"],
+        ["xpath=//li[4]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Tool')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31c94513-dc74-4c5e-8307-dfdbb2278209",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-widgets-IDublinCore-title",
+      "targets": [
+        ["id=form-widgets-IDublinCore-title", "id"],
+        ["name=form.widgets.IDublinCore.title", "name"],
+        ["css=#form-widgets-IDublinCore-title", "css:finder"],
+        ["xpath=//input[@id='form-widgets-IDublinCore-title']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-IDublinCore-title']/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba307997-e5d1-425e-8d96-489e962c8fd5",
+      "comment": "",
+      "command": "type",
+      "target": "id=form-widgets-IDublinCore-title",
+      "targets": [
+        ["id=form-widgets-IDublinCore-title", "id"],
+        ["name=form.widgets.IDublinCore.title", "name"],
+        ["css=#form-widgets-IDublinCore-title", "css:finder"],
+        ["xpath=//input[@id='form-widgets-IDublinCore-title']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-IDublinCore-title']/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": "Example tool"
+    }, {
+      "id": "72f94542-0299-4465-9b60-9fdfbbe6335a",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-widgets-tool_purpose",
+      "targets": [
+        ["id=form-widgets-tool_purpose", "id"],
+        ["name=form.widgets.tool_purpose", "name"],
+        ["css=#form-widgets-tool_purpose", "css:finder"],
+        ["xpath=//textarea[@id='form-widgets-tool_purpose']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-tool_purpose']/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86431839-83ad-4c08-a9cd-167b3f73f19d",
+      "comment": "",
+      "command": "type",
+      "target": "id=form-widgets-tool_purpose",
+      "targets": [
+        ["id=form-widgets-tool_purpose", "id"],
+        ["name=form.widgets.tool_purpose", "name"],
+        ["css=#form-widgets-tool_purpose", "css:finder"],
+        ["xpath=//textarea[@id='form-widgets-tool_purpose']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-tool_purpose']/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/textarea", "xpath:position"]
+      ],
+      "value": "To be an example"
+    }, {
+      "id": "4845b697-0700-437a-b9c9-e9a7fd118530",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=3",
+      "targets": [
+        ["index=3"]
+      ],
+      "value": ""
+    }, {
+      "id": "956b39b6-1fba-440c-b8ee-82042c679713",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'\n')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aba0c4a2-df0f-426b-b944-70401aa18de3",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "An example tool"
+    }, {
+      "id": "4129d93a-fea6-4366-90bf-8cab76710215",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7c1cf3e-85d8-4fb1-b763-485d19180c60",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "b19a54b8-26d8-4fee-8fce-29978048a279",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'\n')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d45698b0-35a7-4ffc-8634-7290bf3dae44",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "There are none"
+    }, {
+      "id": "8b9a35d9-e7ac-4904-9aa5-2c373d1eebaa",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "1724c6ee-bd1f-4517-b574-3dfc1fbfedec",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "468fadc1-cbb3-49ca-868e-c6593f023956",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'\n')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0415eea2-a999-4c58-8e44-360bcfce98f5",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "There are also none"
+    }, {
+      "id": "587e1d0e-b912-455e-b4e1-d25753cf54b6",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "62e41ba7-2207-4d17-9cb5-0903bf99d0f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-buttons-save",
+      "targets": [
+        ["id=form-buttons-save", "id"],
+        ["name=form.buttons.save", "name"],
+        ["css=#form-buttons-save", "css:finder"],
+        ["xpath=//input[@id='form-buttons-save']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/input", "xpath:idRelative"],
+        ["xpath=//article/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f2f58a7-3661-495e-bd2f-a61b74206056",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.portalMessage",
+      "targets": [],
+      "value": "Info Item created"
+    }]
+  }, {
+    "id": "4417c3fb-5aa1-41d2-a27c-67193031bcf8",
+    "name": "Tool edit",
+    "commands": [{
+      "id": "f116f40a-6b0d-4c7c-b87a-e194b35efa27",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/tools/example-tool-2/view",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "233ec8e5-3729-4cd8-a1d8-f47f0e6d500b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#contentview-edit span:nth-child(2)",
+      "targets": [
+        ["css=#contentview-edit span:nth-child(2)", "css:finder"],
+        ["xpath=//li[@id='contentview-edit']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0bbb7c6-8a2a-45b4-a7cb-8d933594b3a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-widgets-IDublinCore-title",
+      "targets": [
+        ["id=form-widgets-IDublinCore-title", "id"],
+        ["name=form.widgets.IDublinCore.title", "name"],
+        ["css=#form-widgets-IDublinCore-title", "css:finder"],
+        ["xpath=//input[@id='form-widgets-IDublinCore-title']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-IDublinCore-title']/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dece0a4d-92e7-42f8-a6dd-a1e44a11f8bd",
+      "comment": "",
+      "command": "type",
+      "target": "id=form-widgets-IDublinCore-title",
+      "targets": [
+        ["id=form-widgets-IDublinCore-title", "id"],
+        ["name=form.widgets.IDublinCore.title", "name"],
+        ["css=#form-widgets-IDublinCore-title", "css:finder"],
+        ["xpath=//input[@id='form-widgets-IDublinCore-title']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-IDublinCore-title']/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": "Edited example tool"
+    }, {
+      "id": "3667682d-777c-4a0e-916f-c6d1522b8f3e",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-buttons-save",
+      "targets": [
+        ["id=form-buttons-save", "id"],
+        ["name=form.buttons.save", "name"],
+        ["css=#form-buttons-save", "css:finder"],
+        ["xpath=//input[@id='form-buttons-save']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/input", "xpath:idRelative"],
+        ["xpath=//article/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ba1b07d-6552-4e22-bce9-e07211d8034a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.documentFirstHeading",
+      "targets": [],
+      "value": "Edited example tool"
+    }]
+  }, {
+    "id": "0b8666d4-9020-4974-b8f7-2c92a5ebf7d7",
+    "name": "Tool delete",
+    "commands": [{
+      "id": "56b9a00d-7587-4469-8776-6f137e275682",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/tools/example-tool-2/view",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1777c844-9f81-42ac-85b4-77cf779c6990",
+      "comment": "",
+      "command": "click",
+      "target": "css=#plone-contentmenu-actions .plone-toolbar-title",
+      "targets": [
+        ["css=#plone-contentmenu-actions .plone-toolbar-title", "css:finder"],
+        ["xpath=//li[@id='plone-contentmenu-actions']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[5]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Actions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "240f0be0-00ec-4488-bcc3-095098a870d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=plone-contentmenu-actions-delete",
+      "targets": [
+        ["id=plone-contentmenu-actions-delete", "id"],
+        ["linkText=Delete", "linkText"],
+        ["css=#plone-contentmenu-actions-delete", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete')]", "xpath:link"],
+        ["xpath=//a[@id='plone-contentmenu-actions-delete']", "xpath:attributes"],
+        ["xpath=//li[@id='plone-contentmenu-actions']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/repo/tools/example-tool-2/delete_confirmation?_authenticator=dcf0c52d38190c54e42be8c70b621ff9f8937071']", "xpath:href"],
+        ["xpath=//li[5]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d996434-f485-4a5e-a018-dc62688e415c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pattern-modal-buttons > #form-buttons-Delete",
+      "targets": [
+        ["css=.pattern-modal-buttons > #form-buttons-Delete", "css:finder"],
+        ["xpath=(//input[@id='form-buttons-Delete'])[2]", "xpath:attributes"],
+        ["xpath=//body[@id='visual-portal-wrapper']/div[2]/div/div/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e26113fa-8a33-4a9a-888c-11b0319ed51f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.portalMessage",
+      "targets": [],
+      "value": "Info Example tool has been deleted."
+    }]
+  }, {
+    "id": "e9e5787b-ab84-4d72-aad1-a56fc30531b3",
+    "name": "Visibility private",
+    "commands": [{
+      "id": "57a0415c-87c7-4496-b4fd-120cd7536e8c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(1) > .field span:nth-child(1)",
+      "targets": [],
+      "value": "Login Name"
+    }]
+  }, {
+    "id": "0be01320-193f-4ef5-ac00-d1649c1b3adb",
+    "name": "Visibility public",
+    "commands": [{
+      "id": "094de644-68f5-4060-88cb-be8d1652ea60",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/method/test",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86c14040-98ac-4d1b-90a0-eacdcbdc9013",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.documentFirstHeading",
+      "targets": [],
+      "value": "Example method"
+    }]
+  }, {
+    "id": "9fd2d5f0-4c51-4b32-9474-a7282897e98e",
+    "name": "Visibility set private",
+    "commands": [{
+      "id": "0e986a56-7710-4fa8-bde5-7cc63b630637",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/method/test",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a83050f-d1d1-4a48-a909-8b8b3e5b8e35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.plone-toolbar-title:nth-child(1)",
+      "targets": [
+        ["css=.plone-toolbar-title:nth-child(1)", "css:finder"],
+        ["xpath=//li[@id='plone-contentmenu-workflow']/a/span[2]/span", "xpath:idRelative"],
+        ["xpath=//span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07646895-8ee5-4096-9110-c5491c5cd506",
+      "comment": "",
+      "command": "click",
+      "target": "id=workflow-transition-reject",
+      "targets": [
+        ["id=workflow-transition-reject", "id"],
+        ["linkText=Send back", "linkText"],
+        ["css=#workflow-transition-reject", "css:finder"],
+        ["xpath=//a[contains(text(),'Send back')]", "xpath:link"],
+        ["xpath=//a[@id='workflow-transition-reject']", "xpath:attributes"],
+        ["xpath=//li[@id='plone-contentmenu-workflow']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/repo/method/test/content_status_modify?workflow_action=reject&_authenticator=37b66928ff282a1d8e5bb11d1087b0d49f353b16']", "xpath:href"],
+        ["xpath=//li[4]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Send back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f4db578-bb97-4c9e-a09e-581cc6194b99",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.portalMessage",
+      "targets": [],
+      "value": "Info Item state changed."
+    }, {
+      "id": "db8afde8-537c-4a14-8e46-80735ed7fd4e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.plone-toolbar-title:nth-child(1)",
+      "targets": [],
+      "value": "State: Private"
+    }, {
+      "id": "4247a7bd-5f97-4d0d-9acf-0b1470907b67",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.state-private:nth-child(2)",
+      "targets": [],
+      "value": "State: Private"
+    }]
+  }, {
+    "id": "bad5c487-3943-4c6d-80ae-e70cd5a196b0",
+    "name": "Visibility set published",
+    "commands": [{
+      "id": "50b65c18-893d-451f-b19f-116e6964ef97",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/method/test",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a18b4ecb-48d5-4617-bc64-d23e1d7cfb38",
+      "comment": "",
+      "command": "click",
+      "target": "css=.label-state-private > span:nth-child(2)",
+      "targets": [
+        ["css=.label-state-private > span:nth-child(2)", "css:finder"],
+        ["xpath=//li[@id='plone-contentmenu-workflow']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3073089-1283-4917-b021-3555371372d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=workflow-transition-publish",
+      "targets": [
+        ["id=workflow-transition-publish", "id"],
+        ["linkText=Publish", "linkText"],
+        ["css=#workflow-transition-publish", "css:finder"],
+        ["xpath=//a[contains(text(),'Publish')]", "xpath:link"],
+        ["xpath=//a[@id='workflow-transition-publish']", "xpath:attributes"],
+        ["xpath=//li[@id='plone-contentmenu-workflow']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/repo/method/test/content_status_modify?workflow_action=publish&_authenticator=37b66928ff282a1d8e5bb11d1087b0d49f353b16']", "xpath:href"],
+        ["xpath=//li[4]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Publish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4c0aa2c-91ef-4388-85fd-606fd3eb9c46",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.portalMessage",
+      "targets": [],
+      "value": "Info Item state changed."
+    }, {
+      "id": "b7a53d31-b1ba-46e0-92c8-c4eba6dcbc49",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.plone-toolbar-state-title",
+      "targets": [],
+      "value": "Published"
+    }]
+  }, {
+    "id": "f683dba0-e81b-4e47-a735-915a3dcdacc9",
+    "name": "Use case add",
+    "commands": [{
+      "id": "7f8958a1-fd3d-484e-99bd-19df2a4e6fbf",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/use-cases#c4=all&b_start=0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c88428e-e441-4183-9ac2-f48831597ccd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#plone-contentmenu-factories .plone-toolbar-title",
+      "targets": [
+        ["css=#plone-contentmenu-factories .plone-toolbar-title", "css:finder"],
+        ["xpath=//li[@id='plone-contentmenu-factories']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[5]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Add new…')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3080e4ea-e377-476b-a477-dfa11c9e8ffa",
+      "comment": "",
+      "command": "click",
+      "target": "id=use_case",
+      "targets": [
+        ["id=use_case", "id"],
+        ["linkText=Use Case", "linkText"],
+        ["css=#use_case", "css:finder"],
+        ["xpath=//a[contains(text(),'Use Case')]", "xpath:link"],
+        ["xpath=//a[@id='use_case']", "xpath:attributes"],
+        ["xpath=//li[@id='plone-contentmenu-factories']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/repo/use-cases/++add++use_case']", "xpath:href"],
+        ["xpath=//li[5]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Use Case')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5efaa4ad-050b-47a4-8543-c4794425279f",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-widgets-IBasic-title",
+      "targets": [
+        ["id=form-widgets-IBasic-title", "id"],
+        ["name=form.widgets.IBasic.title", "name"],
+        ["css=#form-widgets-IBasic-title", "css:finder"],
+        ["xpath=//input[@id='form-widgets-IBasic-title']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-IBasic-title']/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd86926c-2faf-4a75-b3d1-bc94599e6d9f",
+      "comment": "",
+      "command": "type",
+      "target": "id=form-widgets-IBasic-title",
+      "targets": [
+        ["id=form-widgets-IBasic-title", "id"],
+        ["name=form.widgets.IBasic.title", "name"],
+        ["css=#form-widgets-IBasic-title", "css:finder"],
+        ["xpath=//input[@id='form-widgets-IBasic-title']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-IBasic-title']/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": "Example use case"
+    }, {
+      "id": "7eca9a70-93d8-4655-b3a0-fa3c4233fd30",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d4c2a72-d43e-43b4-8893-b09c9af2f63b",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'\n')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "75d5b473-333d-42de-a534-3b46fd84b1b1",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "An example use case"
+    }, {
+      "id": "d49c8c6b-907c-4a71-ad14-aed80ca6ec6a",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa8bdad2-a944-469a-befb-760640b3bba9",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-buttons-save",
+      "targets": [
+        ["id=form-buttons-save", "id"],
+        ["name=form.buttons.save", "name"],
+        ["css=#form-buttons-save", "css:finder"],
+        ["xpath=//input[@id='form-buttons-save']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/input", "xpath:idRelative"],
+        ["xpath=//article/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5160a965-a54c-4b08-ae34-29c1a6d26073",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.portalMessage",
+      "targets": [],
+      "value": "Info Item created"
+    }]
+  }, {
+    "id": "24a842f5-c54f-4582-85ff-060e36645d47",
+    "name": "Use case edit",
+    "commands": [{
+      "id": "3cebe8e7-ceb9-4a2b-bce1-638f473d4252",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/use-cases/example-use-case",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59324c95-cb8c-4f93-b282-ed633c435a71",
+      "comment": "",
+      "command": "click",
+      "target": "css=#contentview-edit span:nth-child(2)",
+      "targets": [
+        ["css=#contentview-edit span:nth-child(2)", "css:finder"],
+        ["xpath=//li[@id='contentview-edit']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0aff6e7c-96f4-4ff0-9c07-a687cc9b92b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-widgets-IBasic-title",
+      "targets": [
+        ["id=form-widgets-IBasic-title", "id"],
+        ["name=form.widgets.IBasic.title", "name"],
+        ["css=#form-widgets-IBasic-title", "css:finder"],
+        ["xpath=//input[@id='form-widgets-IBasic-title']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-IBasic-title']/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "457e2b02-55a3-482a-8cb6-1aca3fed22e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=form-widgets-IBasic-title",
+      "targets": [
+        ["id=form-widgets-IBasic-title", "id"],
+        ["name=form.widgets.IBasic.title", "name"],
+        ["css=#form-widgets-IBasic-title", "css:finder"],
+        ["xpath=//input[@id='form-widgets-IBasic-title']", "xpath:attributes"],
+        ["xpath=//div[@id='formfield-form-widgets-IBasic-title']/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": "Changed example use case"
+    }, {
+      "id": "bea51513-e8cc-426f-a53c-7bcadab60902",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-buttons-save",
+      "targets": [
+        ["id=form-buttons-save", "id"],
+        ["name=form.buttons.save", "name"],
+        ["css=#form-buttons-save", "css:finder"],
+        ["xpath=//input[@id='form-buttons-save']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div/input", "xpath:idRelative"],
+        ["xpath=//article/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "274c4460-ad94-4799-8cfb-fc5b30ec2083",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.portalMessage",
+      "targets": [],
+      "value": "Info Changes saved"
+    }, {
+      "id": "ff79340c-acfe-49e8-b268-6805dcdf2c4a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.documentFirstHeading",
+      "targets": [],
+      "value": "Changed example use case"
+    }]
+  }, {
+    "id": "06a3b4cc-a88e-4dad-9720-bafbcde82c62",
+    "name": "Use case delete",
+    "commands": [{
+      "id": "e561139b-cdb4-4dfe-8914-dc8a4b3f166b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/repo/use-cases/example-use-case",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abc40498-a6a3-4a2e-a7a1-c42f6fb5e904",
+      "comment": "",
+      "command": "click",
+      "target": "css=#plone-contentmenu-actions .plone-toolbar-title",
+      "targets": [
+        ["css=#plone-contentmenu-actions .plone-toolbar-title", "css:finder"],
+        ["xpath=//li[@id='plone-contentmenu-actions']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[6]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Actions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc655c6d-07cf-4ae3-b182-bf6009c4cb72",
+      "comment": "",
+      "command": "click",
+      "target": "id=plone-contentmenu-actions-delete",
+      "targets": [
+        ["id=plone-contentmenu-actions-delete", "id"],
+        ["linkText=Delete", "linkText"],
+        ["css=#plone-contentmenu-actions-delete", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete')]", "xpath:link"],
+        ["xpath=//a[@id='plone-contentmenu-actions-delete']", "xpath:attributes"],
+        ["xpath=//li[@id='plone-contentmenu-actions']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/repo/use-cases/example-use-case/delete_confirmation?_authenticator=dcf0c52d38190c54e42be8c70b621ff9f8937071']", "xpath:href"],
+        ["xpath=//li[6]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab4c77cb-50ca-4fe4-8d42-519a2fc9d724",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pattern-modal-buttons > #form-buttons-Delete",
+      "targets": [
+        ["css=.pattern-modal-buttons > #form-buttons-Delete", "css:finder"],
+        ["xpath=(//input[@id='form-buttons-Delete'])[2]", "xpath:attributes"],
+        ["xpath=//body[@id='visual-portal-wrapper']/div[2]/div/div/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33b0cd74-cdd1-4a0d-98f5-616de466544b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.portalMessage",
+      "targets": [],
+      "value": "Info Changed example use case has been deleted."
+    }]
+  }],
+  "suites": [{
+    "id": "cc254544-85c1-4e9d-b2a6-3fad558bb72d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["06c54a81-8e64-40c6-811b-46285e6177ce"]
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/repo/", "http://localhost:8080/repo/method/example-method-9", "http://localhost:8080/repo/tools/example-tool-2/view", "http://localhost:8080/repo/method", "http://localhost:8080/repo/use-cases"],
+  "plugins": []
+}
