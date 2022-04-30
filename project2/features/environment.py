@@ -74,7 +74,6 @@ def before_feature(context, feature):
         context.method_url = driver.current_url
 
 
-
 def after_feature(context, feature):
     driver: webdriver.Remote = context.driver
     if feature.name == "Visibility":
